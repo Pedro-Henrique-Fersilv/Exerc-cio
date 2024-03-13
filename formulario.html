@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Pesquisa</title>
+        </head>    
+        <body>
+            <h1>Pesquisa</h1>
+            <Form action="inicio.html"  method="post">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Nome" id="nome"/>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder= "Ex: pedro@desenvolve.com" id ="email"/>
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" placeholder= "Número de telefone" id= "telefone"/>
+                </p>
+                
+                <p>
+                    <b>Informe sua idade:</b>
+                    <p>
+                        <label for="-18">Menos de 18</label>
+                        <input type="radio" id="-18" name="idade"/>
+                        <label for="18-40">De 18 a 40</label>
+                        <input type="radio" id="18-40" name="idade"/>
+                        <label for="+40">Acima de 40</label>
+                        <input type="radio" id="+40" name="idade"/>
+                    </p>
+                </p>
+                <p>
+                    <b>Pratica algum espore?</b>
+                    <p>
+                        <label for="frequentemente">Frequentemênte</label>
+                        <input type="radio" id="frequentemente" name="esporte"/>
+                        <label for="devezemquando">De vez em quando</label>
+                        <input type="radio" id="devezemquando" name="esporte"/>
+                        <label for="nao">Não</label>
+                        <input type="radio" id="nao" name="esporte"/>
+                    </p>
+                </p>
+                <p>
+                    <b>Estado residente</b>                    
+                    <p>
+                        <select>
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MG</option>
+                            <option>MS</option>
+                            <option>MT</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SE</option>
+                            <option>SP</option>
+                            <option>TO</option>
+                        </select>
+                    </p>
+                </p>
+                <p>
+                        <label for="concordo"><i>Autorizo compartilhar estes dados com terceiros</i></label>
+                        <input type="checkbox" id="concordo"/>
+                </p>
+            </Form>
+        </body>
+    </html>
