@@ -1,15 +1,23 @@
 /* Color Theme Swatches in Hex */
 .destaque { color: #0D0D0D; }
 .background { color: #262626; }
-.UI/UX-5-hex { color: #A6A6A6; }
+.border { color: #A6A6A6; }
 .UI/UX-4-hex { color: #D9D9D9; }
 .principal { color: #F2F2F2; }
 
 html {
-    background-color: #262626;
-    color: #F2F2F2;
     font-family: sans-serif;
     font-size: 18px;
+}
+
+header {
+    background-color: #F2F2F2;
+    color: #262626;
+}
+
+body {
+    background-color: #262626;
+    color: #F2F2F2;
 }
 
 p {
@@ -17,6 +25,7 @@ p {
 }
 
 h1 {
+    text-indent: 1em;
     text-align: center;
     font-size: 1.8rem;
 }
@@ -31,6 +40,36 @@ h3 {
     font-size: 1.2rem;
 }
 
+zen-intro header h1,zen-intro header h2 {
+    display: inline-block;
+}
+
+zen-intro header h1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.page-wrapper {
+    width: 80%;
+    max-width: 1280;
+    margin: auto;
+}
+
+aside ul {list-style-type: none;}
+aside ul li {
+    margin: 1em;
+    text-align: center;
+}
+
+.main footer {margin: 4%;}
+.main footer a {
+    border: solid 2px #A6A6A6;;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+#zen-intro {height: 550px;}
+#design-archives {display: none;}
 .summary {text-align: center;}
 .main p {line-height: 1.5;}
 abbr {font-variant: small-caps;}
