@@ -50,6 +50,7 @@ zen-intro header h1 {
 }
 
 .page-wrapper {
+    position: relative;
     width: 80%;
     max-width: 1280;
     margin: auto;
@@ -66,6 +67,22 @@ aside ul li {
     border: solid 2px #A6A6A6;;
     padding: 0.5em;
     display: inline-block;
+    padding-right: 2%;
+}
+
+.explanation {
+    width: 60%;
+    padding-right: 2%;
+    margin-right: 35%;
+    border-right: solid 1px #1f295c;
+}
+
+#design-selection {
+    position: absolute;
+    top: 560px;
+    left:  62%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 #zen-intro {height: 550px;}
