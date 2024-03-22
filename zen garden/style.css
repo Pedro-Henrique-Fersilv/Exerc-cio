@@ -64,7 +64,7 @@ aside ul li {
 
 .main footer {margin: 4%;}
 .main footer a {
-    border: solid 2px #A6A6A6;;
+    border: solid 2px #A6A6A6;
     padding: 0.5em;
     display: inline-block;
     padding-right: 2%;
@@ -74,15 +74,50 @@ aside ul li {
     width: 60%;
     padding-right: 2%;
     margin-right: 35%;
-    border-right: solid 1px #1f295c;
+    border-right: solid 1px #A6A6A6;
 }
 
 #design-selection {
     position: absolute;
-    top: 560px;
+    top: 490px;
     left:  62%;
     padding-left: 1%;
     padding-right: 1%;
+}
+
+.supporting footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.benefits {
+    border-top: solid 1px #A6A6A6;
+    border-bottom: solid 1px #A6A6A6;
+    display: flex;
+}
+
+.benefits h3 {
+    flex-basis: 30%;
+    align-self: center;
+    order: 2;
+}
+
+.benefits p {
+    flex-basis: 70%;
+}
+
+.participation {
+    border-top: solid 1px #A6A6A6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.participation h3, .participation p {
+    flex-basis: 50%;
+}
+
+.participation h3 {
+    align-self: center;
 }
 
 #zen-intro {height: 550px;}
