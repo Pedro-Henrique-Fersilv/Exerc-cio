@@ -2,7 +2,7 @@
 .destaque { color: #0D0D0D; }
 .background { color: #262626; }
 .border { color: #A6A6A6; }
-.UI/UX-4-hex { color: #D9D9D9; }
+.links { color: #D9D9D9; }
 .principal { color: #F2F2F2; }
 
 html {
@@ -77,9 +77,9 @@ aside ul li {
     border-right: solid 1px #A6A6A6;
 }
 
-#design-selection {
+.design-selection {
     position: absolute;
-    top: 490px;
+    top: 470px;
     left:  62%;
     padding-left: 1%;
     padding-right: 1%;
@@ -118,6 +118,35 @@ aside ul li {
 
 .participation h3 {
     align-self: center;
+}
+
+a {
+    color: #0D0D0D;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #D9D9D9;
+}
+
+a:visited {
+    font-weight: normal;
+}
+
+.main p:first-of-type::first-letter {
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+}
+
+.design-selection li {
+    border-top: solid 1px #A6A6A6;
+    padding-top: 5px;
+}
+
+.design-selection li:last-child {
+    border-bottom: solid 1px #A6A6A6;
+    padding-bottom: 5px;
 }
 
 #zen-intro {height: 550px;}
