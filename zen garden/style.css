@@ -149,6 +149,54 @@ a:visited {
     padding-bottom: 5px;
 }
 
+@media screen and (max-width:768px){
+    .design-selection {
+        position: static;
+        width: 100%;
+    }
+
+    .explanation {
+        border-right: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .participation {
+        flex-direction: column;
+    }
+
+    #zen-intro {
+        height: auto;
+    }
+    p {
+        text-indent: 0%;
+    }
+
+}
+
+@media print {
+    html{
+        font-family: serif;
+    }
+
+    header {
+        background-color: #262626;
+        color: #F2F2F2;
+    }
+
+    .design-selection {
+        position: static;
+        width: 100%;
+    }
+
+    .explanation {
+        border-right: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+}
+
 #zen-intro {height: 550px;}
 #design-archives {display: none;}
 .summary {text-align: center;}
