@@ -1,0 +1,160 @@
+/* Color Theme Swatches in Hex */
+.destaque { color: #166322; }
+.principal { color: rgb(187, 243, 173); }
+.secundária { color: #1b8500; }
+
+
+*{
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        p, a {font-family: Arial;
+        }
+}
+
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(187, 243, 173);
+}
+
+body,ul, li, p {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.menu {
+    color:#ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1b8500;
+}
+
+.foto {
+    height: 200px;
+    width: 200px;
+}
+
+.foto img {
+    height: 200px;
+}
+
+.name-info {
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 200px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.info ul {
+    list-style-type: none;
+    line-height: 25px;
+}
+
+#short {
+    min-width: 300px;
+    height: 200px;
+}
+
+nav ul li a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    background-color: #2499068f;
+}
+
+nav ul li a:hover {
+    background-color: #1b8500;
+}
+
+main {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+main > section {
+    padding-left: 40px;
+    border-bottom: solid 1px rgb(85, 214, 53);
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+main ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.exp ul {
+    line-height: 20px;
+       
+}
+
+.habtec {
+    border-bottom: none;
+}
+
+.habtec ul {
+    list-style-type:disc;
+}
+
+footer {
+    color:rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    background-color: #037a15;
+}
+
+footer img {
+    height: 15px;
+    width: 15px;
+}
+
+footer a {
+    line-height: 40px;
+    color: white;
+}
+
+footer a:hover {
+    color: #91ff00;
+}
+
+.copyright {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 962px) {
+    #short {
+        flex-grow: 1;
+        height: 200px;
+    }  
+}
+
+@media screen and (max-width: 662px) {
+    #short {
+        order: 2;
+        min-width: auto;
+        height: 200px;
+    }
+
+    .name-info{
+        order: 3;
+    } 
+}
