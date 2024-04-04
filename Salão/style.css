@@ -4,55 +4,110 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+:target {
+    scroll-margin-top: 30px;
 }
 
 header {
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-height: 720px;
+    max-height: 80px;
+    z-index: 1;
+    border-bottom: solid 5px rgb(240, 238, 238);
 }
 
 .menu {
     display: flex;
+    font-family: Helvetica;
+    background-color: white;
     width: 100%;
     height: 80px;
-}
-
-.first_page {
-    background-color: rgb(240, 238, 238);
-    padding: 30px;
-    max-height: 600px;
+    justify-content: space-between;
+    margin-right: 100px;
 }
 
 #logo {
+    margin-left: 20px;
     width: 100px;
     height: 100px;
 }
 
-.setence_and_scheduling {
+.menu nav {
+    font-size: 25px;
+    align-self: center;
+}
+
+#bar-navigation {
+    list-style: none;
+}
+
+#bar-navigation li {
+    display: inline; 
+}
+
+.bar-link {
+    transition:all 0.3s;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block; 
+}
+
+.bar-link:hover {
+    transform: translateY(-3px);
+    color: rgb(49, 49, 49);
+}
+
+.bar-link::after {
+    transition: none;
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    width: 50%;
+    height: 1px;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.bar-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.first_page {
+    margin-top: 0px;
+    padding-top: 0px;
     display: flex;
     flex-wrap: wrap;
-    align-self: center;
-    width: 60%;
+    flex-direction: row;
+    background-color: rgb(240, 238, 238);
+    height: 660px;
 }
 
 .setence {
-    width: auto;
+    padding-top: 30px;
+    background-color: rgb(255, 255, 255);
     z-index: 1;
-    padding-left: 20px;
-    margin-bottom: 70px;
+    padding-left: 40px;
+    width: 60%;
 }
 
-.setence h1 {
-    background-color: rgb(240, 238, 238);
-    font-size: 90px;
+.h1setence h1 {
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 85px;
+    line-height: 120px;
 }
 
-.setence b {
+.h1setence b {
     padding-left: 5px;
     padding-right: 5px;
     color: rgb(255, 255, 255);
@@ -60,18 +115,72 @@ header {
 }
 
 .scheduling {
-    width: 75%;
+    width: 55%;
+    align-self: center;
     text-align: center;
 }
 
+.whatsapp {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .example {
-    width: 40%;
-    top: 25%;
-    left: 55%;
     position: absolute;
+    width: 45%;
+    top: 120px;
+    left: 55%;
 }
 
-#example {
+#exampleimg {
+    border: solid 5px rgb(240, 238, 238);
+    width: 90%;
+}
+
+#about {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    height: 660px;
+    align-items: center;
+}
+
+#salao {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 60%;
+}
+
+#salao img {
     width: 100%;
+    height: 60%;
 }
 
+.about-text {
+    width: 50%;
+}
+
+.services {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    background-color: rgb(240, 238, 238);
+    height: 660px;
+    align-items: center;
+}
+
+#list-services {
+}
